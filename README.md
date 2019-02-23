@@ -2,11 +2,13 @@
 
 - RC Receiver Mode (Control with a [modified PartiBadge!](https://github.com/technobly/parti-badge/tree/sumo-bot))
 - TODO: Add Logo Turtle OS control system
+    - Currently this is fully encoded and parsed in the controller.
+    - Move decoder to bot.
 
 ## Local Compile
 
 ```
-$ git checkout v0.9.0-rc.3
+$ git checkout v0.9.0
 $ cd firmware/main
 // enter DFU mode
 firmware/main $ make clean all -s APPDIR=~/code/debugging/technobly/particle-mesh-sumo-bot/firmware PLATFORM=xenon COMPILE_LTO=n program-dfu
